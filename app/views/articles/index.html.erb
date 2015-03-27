@@ -1,0 +1,10 @@
+<% @articles.each do |article| %>
+	<h2><%= link_to article.title, article %></h2>
+		<div>
+			<%= article.description %> - <%= link_to "Eliminar", article, method: :delete, class:"red" %>
+		</div>
+		<div>
+			<%= article.categories %> 
+		</div>
+
+<%end%>

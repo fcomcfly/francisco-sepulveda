@@ -1,0 +1,7 @@
+<h2><%= @article.title %></h2>
+<div>
+<%= @article.description %> - <%= link_to "Editar", edit_article_path(@article), class:"red" %>
+</div>
+<div>
+<%= @article.categories %>
+</div>
